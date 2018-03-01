@@ -34,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
-              <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -151,7 +151,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1519872029146</updated>
-      <workItem from="1519872030900" duration="2211000" />
+      <workItem from="1519872030900" duration="2325000" />
     </task>
     <task id="LOCAL-00001" summary="added DS_Store to gitignore">
       <created>1519873016295</created>
@@ -195,11 +195,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519874665570</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="stripped down">
+      <created>1519874890755</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1519874890755</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2211000" />
+    <option name="totallyTimeSpent" value="2325000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="1028" extended-state="6" />
@@ -237,7 +244,8 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;README.md" />
     <MESSAGE value="7:12:33" />
     <MESSAGE value="changed server port to 8080" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed server port to 8080" />
+    <MESSAGE value="stripped down" />
+    <option name="LAST_COMMIT_MESSAGE" value="stripped down" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -266,7 +274,7 @@
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
-          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
           <folding />
         </state>
       </provider>
