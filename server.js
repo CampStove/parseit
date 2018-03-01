@@ -9,13 +9,16 @@ const axios = require('axios');
 //   });
 // });
 
-axios({
+axios.get('/api/yahoo', {
   method:'get',
   url:'http://bit.ly/2mTM3nY',
   responseType:'stream'
 })
   .then(function(response) {
     response.data.pipe(fs.createWriteStream('ada_lovelace.jpg'))
+  })
+  .catch(function (error) {
+    console.log(error);
   });
 
 app.use(express.static('public'));
