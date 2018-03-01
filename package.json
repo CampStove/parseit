@@ -24,6 +24,8 @@
   "homepage": "https://github.com/CampStove/parseit#readme",
   "dependencies": {
     "axios": "^0.18.0",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "hapi": "^17.2.1",
+    "wreck": "^14.0.2"
   }
 }
