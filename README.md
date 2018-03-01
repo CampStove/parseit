@@ -1,1 +1,0 @@
-!parseit/.DS_Store
