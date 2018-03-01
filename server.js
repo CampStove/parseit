@@ -11,4 +11,4 @@ app.get('/api/yahoo', (req, res) => {
 
 app.use(express.static('public'));
 
-app.listen(3000, () => console.log('example app listening on port 3000'));
+app.listen(8080, () => console.log('example app listening on port 8080'));
