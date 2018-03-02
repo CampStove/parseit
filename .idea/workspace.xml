@@ -53,8 +53,8 @@
       <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="5" column="54" lean-forward="true" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+            <state relative-caret-position="210">
+              <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -184,7 +184,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1519872029146</updated>
-      <workItem from="1519872030900" duration="9625000" />
+      <workItem from="1519872030900" duration="9699000" />
     </task>
     <task id="LOCAL-00001" summary="added DS_Store to gitignore">
       <created>1519873016295</created>
@@ -312,11 +312,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519947741985</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="username for git *testing*">
+      <created>1519949257668</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1519949257668</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9625000" />
+    <option name="totallyTimeSpent" value="9699000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="22" width="1680" height="1028" extended-state="6" />
@@ -363,7 +370,8 @@
     <MESSAGE value="new" />
     <MESSAGE value="back to axios" />
     <MESSAGE value="basic get request" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic get request" />
+    <MESSAGE value="username for git *testing*" />
+    <option name="LAST_COMMIT_MESSAGE" value="username for git *testing*" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -423,8 +431,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="5" column="54" lean-forward="true" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+        <state relative-caret-position="210">
+          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
           <folding />
         </state>
       </provider>
