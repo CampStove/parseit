@@ -10,17 +10,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            background-color: #fcfcff;
             margin: 0;
             font-family: "Courier New", Helvetica, monospace;
             letter-spacing: 0.1rem;
-            font-size: 0.7rem;
+            font-size: 0.9rem;
+            line-height: 1.5rem;
         }
         ul {
             list-style-type: none;
+            margin: 0;
             padding: 0;
+            overflow: hidden;
         }
-        .text {
+        .status-bar {
+            background-color: #f0f0fa;
+            font-size: 0.8rem;
+            position: fixed;
+            width: 100%;
+        }
+        .status-bar li {
+            float: left;
+            display: block;
+            text-align: center;
+            padding: 0px 20px;
+            text-decoration: none;
+        }
+        .left {
+            max-width: 30%;
+        }
+        img {
+            max-width: 30%;
+            max-height: 70vh;
+        }
+        .right {
             position: absolute;
             margin-left: 60%;
             padding-top: 200px;
@@ -31,20 +53,24 @@
             padding-top: 200px;
             visibility: hidden;
         }
-        @media only screen and (max-width: 500px) {
+        @media only screen and (max-width: 800px) {
             body {
                 margin: 8px;
+                font-size: 0.7rem;
             }
             .main {
                 background-image: none;
                 color: black;
                 text-align: left;
             }
-            .text {
+            .right {
                 padding-top: unset;
                 margin-left: unset;
             }
-            .info {
+            .left {
+                display: none;
+            }
+            #date {
                 display: none;
             }
         }
@@ -52,13 +78,18 @@
 </head>
 <body>
 <section class="main">
-    <article class="info">
-        <p id="one" class="one">JavaScript function sends form data to an iframe<br>iframe transmits the form data to a PHP script<br>PHP script uploads the image to a server<br>JavaScript function displays the uploaded uploaded image</p>
+    <ul id="statusBar" class="status-bar">
+        <li id="date"></li>
+        <li id="temp"></li>
+        <li id="text"></li>
+    </ul>
+    <article class="left">
+        <p id="one" class="one">JavaScript sends form data to an iframe<br>iframe send data to a PHP script<br>PHP script uploads image to server<br>JavaScript displays the uploaded image</p>
         <p id="two" class="two">minimalistic designed client project</p>
-        <p id="three" class="three"></p>
-        <p id="four" class="four"></p>
+        <p id="three" class="three">PHP bases content managment system</p>
+        <img id="four" class="four" src="img/foxygen.png"/>
     </article>
-    <article class="text">
+    <article class="right">
         <p>coleman jackson</p>
         <ul>
             <li on onmouseover="detail('one')" onmouseout="out('one')">image upload to server <a href="http://img.blacktec.co" target="_blank">img.blacktec.co</a></li>
@@ -69,6 +100,8 @@
         <p>604-785-3328<br>4987569@gmail.com</p>
     </article>
 </section>
+<!-- Attach jQuery library -->
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script>
   const detail = function(x) {
     document.getElementById(x).style.visibility = "visible";
@@ -76,6 +109,29 @@
   const out = function(o) {
     document.getElementById(o).style.visibility = "hidden";
   }
+  /* global document, fetch */
+  async function yahooWeather() {
+    const url = '/api/yahoo';
+
+    const success = async (r) => {
+      document.querySelector('#date').innerHTML = r.date;
+      document.querySelector('#temp').innerHTML = r.temp + '&deg;F';
+      const text = document.getElementById('text');
+      text.innerText = r.text;
+      text.title = r.text;
+    }
+
+    try {
+      const rawRes = await fetch(url);
+      const res = await rawRes.json();
+      success(res);
+    } catch (error) {
+      console.log(error);
+      document.getElementById('statusBar').innerHTML = '<li>n/a</li>';
+    }
+
+  }
+  yahooWeather();
 </script>
 </body>
 </html>
