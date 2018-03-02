@@ -8,9 +8,11 @@
     <meta name="keywords" content="coleman jackson, html, css, javascript, porfolio">
     <meta name="author" content="coleman jackson">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
         body {
             margin: 0;
+            padding: 0;
             font-family: "Courier New", Helvetica, monospace;
             letter-spacing: 0.1rem;
             font-size: 0.9rem;
@@ -24,7 +26,7 @@
         }
         .status-bar {
             background-color: #f0f0fa;
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             position: fixed;
             width: 100%;
         }
@@ -32,7 +34,7 @@
             float: left;
             display: block;
             text-align: center;
-            padding: 0px 20px;
+            padding: 0px 30px;
             text-decoration: none;
         }
         .left {
@@ -49,13 +51,13 @@
         }
         .one, .two, .three, .four {
             position: absolute;
-            margin-left: 20%;
+            margin-left: 15%;
             padding-top: 200px;
             visibility: hidden;
         }
-        @media only screen and (max-width: 800px) {
+        @media only screen and (max-width: 930px) {
             body {
-                margin: 8px;
+                margin: 0;
                 font-size: 0.7rem;
             }
             .main {
@@ -63,9 +65,12 @@
                 color: black;
                 text-align: left;
             }
+            .status-bar li {
+                padding: 0px 15px;
+            }
             .right {
+                margin: 8px;
                 padding-top: 20px;
-                margin-left: unset;
             }
             .left {
                 display: none;
@@ -110,12 +115,24 @@
   const out = function(o) {
     document.getElementById(o).style.visibility = "hidden";
   }
+  var today = new Date();
+  var dd = today.getDate();
+  var mm = today.getMonth()+1; //January is 0!
+
+  var yyyy = today.getFullYear();
+  if(dd<10){
+    dd='0'+dd;
+  }
+  if(mm<10){
+    mm='0'+mm;
+  }
+  var today = dd+'/'+mm+'/'+yyyy;
+  document.getElementById("date").value = today;
   /* global document, fetch */
   async function yahooWeather() {
     const url = '/api/yahoo';
 
     const success = async (r) => {
-      document.querySelector('#date').innerHTML = r.date;
       document.querySelector('#temp').innerHTML = r.temp + '&deg;F';
       const text = document.getElementById('text');
       text.innerText = r.text;
