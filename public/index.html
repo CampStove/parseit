@@ -1,13 +1,81 @@
 <!DOCTYPE html>
+<!--suppress ALL -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>hello world</title>
+    <title>parseit</title>
+    <meta name="description" content="coleman jackson's portfolio">
+    <meta name="keywords" content="coleman jackson, html, css, javascript, porfolio">
+    <meta name="author" content="coleman jackson">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #fcfcff;
+            margin: 0;
+            font-family: "Courier New", Helvetica, monospace;
+            letter-spacing: 0.1rem;
+            font-size: 0.7rem;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .text {
+            position: absolute;
+            margin-left: 60%;
+            padding-top: 200px;
+        }
+        .one, .two, .three, .four {
+            position: absolute;
+            margin-left: 20%;
+            padding-top: 200px;
+            visibility: hidden;
+        }
+        @media only screen and (max-width: 500px) {
+            body {
+                margin: 8px;
+            }
+            .main {
+                background-image: none;
+                color: black;
+                text-align: left;
+            }
+            .text {
+                padding-top: unset;
+                margin-left: unset;
+            }
+            .info {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>welcome</h1>
-    <script>
-
-    </script>
+<section class="main">
+    <article class="info">
+        <p id="one" class="one">JavaScript function sends form data to an iframe<br>iframe transmits the form data to a PHP script<br>PHP script uploads the image to a server<br>JavaScript function displays the uploaded uploaded image</p>
+        <p id="two" class="two">minimalistic designed client project</p>
+        <p id="three" class="three"></p>
+        <p id="four" class="four"></p>
+    </article>
+    <article class="text">
+        <p>coleman jackson</p>
+        <ul>
+            <li on onmouseover="detail('one')" onmouseout="out('one')">image upload to server <a href="http://img.blacktec.co" target="_blank">img.blacktec.co</a></li>
+            <li onmouseenter="detail('two')" onmouseout="out('two')">box spring studio <a href="http://bss.blacktec.co" target="_blank">bss.blacktec.co</a></li>
+            <li onmouseenter="detail('three')" onmouseout="out('three')">content management system <a href="http://blacktec.co" target="_blank">cms.blacktec.co</a></li>
+            <li onmouseenter="detail('four')" onmouseout="out('four')">advertisement design</li>
+        </ul>
+        <p>604-785-3328<br>4987569@gmail.com</p>
+    </article>
+</section>
+<script>
+  const detail = function(x) {
+    document.getElementById(x).style.visibility = "visible";
+  };
+  const out = function(o) {
+    document.getElementById(o).style.visibility = "hidden";
+  }
+</script>
 </body>
 </html>
