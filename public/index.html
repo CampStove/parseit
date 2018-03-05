@@ -1,85 +1,14 @@
 <!DOCTYPE html>
-<!--suppress ALL -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>parseit</title>
     <meta name="description" content="coleman jackson's portfolio">
-    <meta name="keywords" content="coleman jackson, html, css, javascript, porfolio">
+    <meta name="keywords" content="coleman jackson, html, css, javascript, portfolio">
     <meta name="author" content="coleman jackson">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: "Courier New", Helvetica, monospace;
-            letter-spacing: 0.1rem;
-            font-size: 0.9rem;
-            line-height: 1.5rem;
-        }
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-        .status-bar {
-            background-color: #f0f0fa;
-            font-size: 0.7rem;
-            position: fixed;
-            width: 100%;
-        }
-        .status-bar li {
-            float: left;
-            display: block;
-            text-align: center;
-            padding: 0px 30px;
-            text-decoration: none;
-        }
-        .left {
-            max-width: 30%;
-        }
-        img {
-            max-width: 30%;
-            max-height: 70vh;
-        }
-        .right {
-            position: absolute;
-            margin-left: 60%;
-            padding-top: 200px;
-        }
-        .one, .two, .three, .four {
-            position: absolute;
-            margin-left: 15%;
-            padding-top: 200px;
-            visibility: hidden;
-        }
-        @media only screen and (max-width: 930px) {
-            body {
-                margin: 0;
-                font-size: 0.7rem;
-            }
-            .main {
-                background-image: none;
-                color: black;
-                text-align: left;
-            }
-            .status-bar li {
-                padding: 0px 15px;
-            }
-            .right {
-                margin: 8px;
-                padding-top: 20px;
-            }
-            .left {
-                display: none;
-            }
-            #date {
-                display: none;
-            }
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
 <section class="main">
@@ -90,66 +19,22 @@
         <li id="text"></li>
     </ul>
     <article class="left">
-        <p id="one" class="one">JavaScript sends form data to an iframe<br>iframe send data to a PHP script<br>PHP script uploads image to server<br>JavaScript displays the uploaded image</p>
+        <p id="one" class="one">JavaScript sends form data to an iframe iframe send data to a PHP script PHP script uploads image to server JavaScript displays the uploaded image</p>
         <p id="two" class="two">minimalistic designed client project</p>
         <p id="three" class="three">PHP bases content managment system</p>
-        <img id="four" class="four" src="img/foxygen.png"/>
     </article>
     <article class="right">
         <p>coleman jackson</p>
         <ul>
-            <li on onmouseover="detail('one')" onmouseout="out('one')">image upload to server <a href="http://img.blacktec.co" target="_blank">img.blacktec.co</a></li>
+            <li onmouseover="detail('one')" onmouseout="out('one')">image upload to server <a href="http://img.blacktec.co" target="_blank">img.blacktec.co</a></li>
             <li onmouseenter="detail('two')" onmouseout="out('two')">box spring studio <a href="http://bss.blacktec.co" target="_blank">bss.blacktec.co</a></li>
             <li onmouseenter="detail('three')" onmouseout="out('three')">content management system <a href="http://blacktec.co" target="_blank">cms.blacktec.co</a></li>
-            <li onmouseenter="detail('four')" onmouseout="out('four')">advertisement design</li>
         </ul>
         <p>604-785-3328<br>4987569@gmail.com</p>
     </article>
+    <ul id="debug"></ul>
 </section>
-<!-- Attach jQuery library -->
-<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script>
-  const detail = function(x) {
-    document.getElementById(x).style.visibility = "visible";
-  };
-  const out = function(o) {
-    document.getElementById(o).style.visibility = "hidden";
-  }
-  var today = new Date();
-  var dd = today.getDate();
-  var mm = today.getMonth()+1; //January is 0!
-
-  var yyyy = today.getFullYear();
-  if(dd<10){
-    dd='0'+dd;
-  }
-  if(mm<10){
-    mm='0'+mm;
-  }
-  var today = dd+'/'+mm+'/'+yyyy;
-  document.getElementById("date").value = today;
-  /* global document, fetch */
-  async function yahooWeather() {
-    const url = '/api/yahoo';
-
-    const success = async (r) => {
-      document.querySelector('#temp').innerHTML = r.temp + '&deg;F';
-      const text = document.getElementById('text');
-      text.innerText = r.text;
-      text.title = r.text;
-    }
-
-    try {
-      const rawRes = await fetch(url);
-      const res = await rawRes.json();
-      success(res);
-    } catch (error) {
-      console.log(error);
-      document.getElementById('statusBar').innerHTML = '<li>n/a</li>';
-    }
-
-  }
-  yahooWeather();
-</script>
+<!-- index javascript -->
+<script src="js/index.js"></script>
 </body>
 </html>
