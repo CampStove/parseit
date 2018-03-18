@@ -8,6 +8,12 @@ app.get('/api/yahoo', (req, res) => {
     res.send(data.query.results.channel.item.condition);
   });
 });
+const ipUrl = 'http://ipinfo.io';
+app.get('/api/ipinfo', (req, res) => {
+  axios.get(ipUrl).then(({data}) => {
+    res.send(data);
+  })
+});
 
 app.use(express.static('public'));
 app.listen(8080, () => console.log('listening on port 8080'));

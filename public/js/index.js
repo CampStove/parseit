@@ -17,6 +17,7 @@ if(mm<10){
 }
 var today = dd+'/'+mm+'/'+yyyy;
 document.getElementById("date").value = today;
+
 /* global document, fetch */
 async function yahooWeather() {
   const url = '/api/yahoo';
@@ -24,9 +25,11 @@ async function yahooWeather() {
   const success = async (r) => {
     document.querySelector('#temp').innerHTML = r.temp + '&deg;F';
     const text = document.getElementById('text');
-    text.innerText = r.text;
-    text.title = r.text;
-  }
+    const rText = r.text;
+    const rTextLower = rText.toLowerCase();
+    text.innerText = rTextLower;
+    text.title = rTextLower;
+  };
 
   try {
     const rawRes = await fetch(url);
@@ -39,6 +42,24 @@ async function yahooWeather() {
 
 }
 yahooWeather();
+async function ipInfo() {
+  const url = '/api/ipinfo';
+
+  // const success = async (r) => {
+  //   document.querySelector('#temp').innerHTML = r.temp + '&deg;F';
+  // }
+  //
+  // try {
+  //   const rawRes = await fetch(url);
+  //   const res = await rawRes.json();
+  //   success(res);
+  // } catch (error) {
+  //   console.log(error);
+  //   document.getElementById('statusBar').innerHTML = '<li>n/a</li>';
+  // }
+
+}
+ipInfo();
 
 if (typeof console  != "undefined")
   if (typeof console.log != 'undefined')

@@ -1,10 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Courier New", Helvetica, monospace;
-    letter-spacing: 0.1rem;
-    font-size: 0.9rem;
-    line-height: 1.5rem;
+    line-height: 1.2rem;
 }
 ul {
     list-style-type: none;
@@ -13,8 +10,7 @@ ul {
     overflow: hidden;
 }
 .status-bar {
-    background-color: #f0f0fa;
-    font-size: 0.7rem;
+    background: linear-gradient(to right, yellow, yellow, yellow, white);
     position: fixed;
     width: 100%;
 }
