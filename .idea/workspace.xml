@@ -53,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="399">
-              <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -255,7 +255,7 @@
       <updated>1519872029146</updated>
       <workItem from="1519872030900" duration="22247000" />
       <workItem from="1520223475388" duration="9250000" />
-      <workItem from="1521269276808" duration="3994000" />
+      <workItem from="1521269276808" duration="4228000" />
     </task>
     <task id="LOCAL-00001" summary="added DS_Store to gitignore">
       <created>1519873016295</created>
@@ -464,7 +464,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35491000" />
+    <option name="totallyTimeSpent" value="35725000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1679" height="1028" extended-state="6" />
@@ -741,7 +741,7 @@
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
-          <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding />
         </state>
       </provider>
