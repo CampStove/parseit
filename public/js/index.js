@@ -60,15 +60,3 @@ async function ipInfo() {
 
 }
 ipInfo();
-
-if (typeof console  != "undefined")
-  if (typeof console.log != 'undefined')
-    console.olog = console.log;
-  else
-    console.olog = function() {};
-
-console.log = function(message) {
-  console.olog(message);
-  document.getElementById('debug').innerHTML = '<li>' + message + '</li>';
-};
-console.error = console.debug = console.info =  console.log
