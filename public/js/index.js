@@ -1,9 +1,3 @@
-const detail = function(x) {
-  document.getElementById(x).style.visibility = "visible";
-};
-const out = function(o) {
-  document.getElementById(o).style.visibility = "hidden";
-}
 var today = new Date();
 var dd = today.getDate();
 var mm = today.getMonth()+1; //January is 0!
@@ -42,21 +36,7 @@ async function yahooWeather() {
 
 }
 yahooWeather();
-async function ipInfo() {
-  const url = '/api/ipinfo';
-
-  // const success = async (r) => {
-  //   document.querySelector('#temp').innerHTML = r.temp + '&deg;F';
-  // }
-  //
-  // try {
-  //   const rawRes = await fetch(url);
-  //   const res = await rawRes.json();
-  //   success(res);
-  // } catch (error) {
-  //   console.log(error);
-  //   document.getElementById('statusBar').innerHTML = '<li>n/a</li>';
-  // }
-
+async function ipApi() {
+  const url = '/api/ipapi';
 }
-ipInfo();
+ipApi();
