@@ -11,65 +11,19 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-<section class="surround">
-    <h1 class="neon">parseit</h1>
-    <article class="weather">
-        <p id="temp"></p>
-        <p id="text"></p>
-    </article>
-    <div id="threejs"></div>
-</section>
-<section class="main">
-    <ul id="statusBar" class="status-bar">
-        <li id="date"></li>
-        <li id="latlong"></li>
-        <li></li>
-        <li></li>
-    </ul>
-    <article class="left">
-        <p id="one" class="one">JavaScript sends form data to an iframe iframe send data to a PHP script PHP script uploads image to server JavaScript displays the uploaded image</p>
-        <p id="two" class="two">minimalistic designed client project</p>
-        <p id="three" class="three">PHP bases content managment system</p>
-    </article>
-    <article class="right">
-        <p>coleman jackson</p>
-        <ul>
-            <li onmouseover="detail('one')" onmouseout="out('one')">image upload to server <a href="http://img.blacktec.co" target="_blank">img.blacktec.co</a></li>
-            <li onmouseenter="detail('two')" onmouseout="out('two')">box spring studio <a href="http://bss.blacktec.co" target="_blank">bss.blacktec.co</a></li>
-            <li onmouseenter="detail('three')" onmouseout="out('three')">content management system <a href="http://blacktec.co" target="_blank">cms.blacktec.co</a></li>
-        </ul>
-        <p>604-785-3328<br>4987569@gmail.com</p>
-    </article>
-    <ul id="debug"></ul>
-</section>
+    <section class="surround">
+        <h1 class="neon">parseit</h1>
+        <article class="weather">
+            <p id="temp"></p>
+            <p id="text"></p>
+            <p id="date"></p>
+            <p><a href="">resume</a></p>
+        </article>
+    </section>
+    <a href="http://img.blacktec.co" target="_blank">img.blacktec.co</a>
+    <a href="http://bss.blacktec.co" target="_blank">bss.blacktec.co</a>
+    <a href="http://blacktec.co" target="_blank">cms.blacktec.co</a>
 <!-- index javascript -->
 <script src="js/index.js"></script>
-<script src="js/three.js"></script>
-<script>
-  var scene = new THREE.Scene();
-  var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
-
-  var renderer = new THREE.WebGLRenderer();
-  renderer.setSize( window.innerWidth, window.innerHeight );
-  document.body.appendChild( renderer.domElement );
-
-  var geometry = new THREE.BoxGeometry( 1, 1, 1 );
-  var material = new THREE.MeshBasicMaterial( { color: 0xFFDD1B } );
-  var cube = new THREE.Mesh( geometry, material );
-  scene.add( cube );
-
-  camera.position.z = 5;
-
-  var animate = function () {
-    requestAnimationFrame( animate );
-
-    cube.rotation.x += 0.1;
-    cube.rotation.y += 0.1;
-
-    renderer.render(scene, camera);
-  };
-
-  animate();
-</script>
 </body>
 </html>
