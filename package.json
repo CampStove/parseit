@@ -25,10 +25,10 @@
   "homepage": "https://github.com/CampStove/parseit#readme",
   "dependencies": {
     "axios": "^0.18.0",
-    "express": "^4.16.2",
-    "hapi": "^17.2.1",
-    "node-fetch": "^2.0.0",
-    "request": "^2.83.0",
+    "express": "^4.16.3",
+    "hapi": "^17.4.0",
+    "node-fetch": "^2.1.2",
+    "request": "^2.86.0",
     "wreck": "^14.0.2"
   }
 }
