@@ -62,8 +62,8 @@
       <file leaf-file-name="resume.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/resume.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="208" column="49" lean-forward="true" selection-start-line="208" selection-start-column="49" selection-end-line="208" selection-end-column="49" />
+            <state relative-caret-position="118">
+              <caret line="199" column="36" lean-forward="true" selection-start-line="199" selection-start-column="36" selection-end-line="199" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -240,7 +240,7 @@
       <workItem from="1522989240806" duration="1632000" />
       <workItem from="1526522299260" duration="3075000" />
       <workItem from="1526579459744" duration="16000" />
-      <workItem from="1526580775807" duration="15907000" />
+      <workItem from="1526580775807" duration="15981000" />
     </task>
     <task id="LOCAL-00001" summary="added DS_Store to gitignore">
       <created>1519873016295</created>
@@ -449,7 +449,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62048000" />
+    <option name="totallyTimeSpent" value="62122000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -908,8 +908,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/resume.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="208" column="49" lean-forward="true" selection-start-line="208" selection-start-column="49" selection-end-line="208" selection-end-column="49" />
+        <state relative-caret-position="118">
+          <caret line="199" column="36" lean-forward="true" selection-start-line="199" selection-start-column="36" selection-end-line="199" selection-end-column="36" />
           <folding />
         </state>
       </provider>
