@@ -24,20 +24,11 @@ a {
     font-family: "Courier New", Courier, monospace;
     font-weight: lighter;
 }
-.inline {
-    display: inline;
-}
 .resume li {
     list-style-type: none;
 }
-.res-date {
-    text-align: right;
-    padding-right:60%;
-    display: inline;
-}
-.caps {
-    text-transform: uppercase;
-    font-weight: lighter;
+.bold {
+    font-weight: bold;
 }
 table, th, td {
     font-size: 0.85rem;
@@ -45,6 +36,8 @@ table, th, td {
 }
 th {
     padding-top: .75rem;
+    text-transform: uppercase;
+    font-weight: lighter;
 }
 ul {
     margin: 0;
