@@ -33,9 +33,10 @@ a {
 table, th, td {
     font-size: 0.85rem;
     text-align: left;
+
 }
 th {
-    padding-top: .75rem;
+    padding: .5rem .5rem 0 0;
     text-transform: uppercase;
     font-weight: lighter;
 }
