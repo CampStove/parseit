@@ -1,3 +1,6 @@
+body {
+    margin: 0;
+}
 .surround {
     margin: 1.875rem 0 0 3.4375rem;
     font-family: "Courier New", Courier, monospace;
@@ -16,75 +19,6 @@ p {
     font-size: 0.75rem;
     text-transform: uppercase;
 }
-
-
-
-
-
-
-
-body {
-    margin: 0;
-    padding: 0;
-    line-height: 1.2rem;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-.status-bar {
-    background: linear-gradient(to right, yellow, yellow, yellow, white);
-    position: fixed;
-    width: 100%;
-}
-.status-bar li {
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 0px 30px;
+a {
     text-decoration: none;
-}
-.left {
-    max-width: 30%;
-}
-img {
-    max-width: 30%;
-    max-height: 70vh;
-}
-.right {
-    position: absolute;
-    margin-left: 60%;
-    padding-top: 200px;
-}
-.one, .two, .three, .four {
-    position: absolute;
-    margin-left: 15%;
-    padding-top: 200px;
-    visibility: hidden;
-}
-@media only screen and (max-width: 930px) {
-    body {
-        margin: 0;
-        font-size: 0.7rem;
-    }
-    .main {
-        background-image: none;
-        color: black;
-        text-align: left;
-    }
-    .status-bar li {
-        padding: 0px 15px;
-    }
-    .right {
-        margin: 8px;
-        padding-top: 20px;
-    }
-    .left {
-        display: none;
-    }
-    #date {
-        display: none;
-    }
 }
