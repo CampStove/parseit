@@ -1,5 +1,4 @@
 const now = new Date();
-now.getFullYear();
 const nowFormat = now.getMonth() +"/"+ now.getDay() +"/"+ now.getFullYear() +" "+ now.getHours() +":"+ now.getMinutes();
 document.getElementById("date").innerText = nowFormat;
 

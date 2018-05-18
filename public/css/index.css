@@ -2,7 +2,7 @@
     margin: 1.875rem 0 0 3.4375rem;
     font-family: "Courier New", Courier, monospace;
     font-weight: lighter;
-    height: 100vh;
+    height: calc((100vh) - (1.875rem)) ;
 }
 
 .neon {
