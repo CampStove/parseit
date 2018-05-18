@@ -7,18 +7,45 @@ body {
     font-weight: lighter;
     height: calc((100vh) - (1.875rem)) ;
 }
-
 .neon {
     color: #fff;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
 }
-.weather p {
+.group p {
     margin: 0;
-}
-p {
     font-size: 0.75rem;
     text-transform: uppercase;
 }
 a {
     text-decoration: none;
+}
+.resume {
+    margin: 1.875rem 0 0 3.4375rem;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: lighter;
+}
+.inline {
+    display: inline;
+}
+.resume li {
+    list-style-type: none;
+}
+.res-date {
+    text-align: right;
+    padding-right:60%;
+    display: inline;
+}
+.caps {
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+table, th, td {
+    font-size: 0.85rem;
+    text-align: left;
+}
+th {
+    padding-top: .75rem;
+}
+ul {
+    margin: 0;
 }
