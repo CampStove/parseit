@@ -48,3 +48,12 @@ ul {
 footer {
     height: 2.5rem;
 }
+.img {
+    display: block;
+    margin: 0 auto;
+    height: 75vh;
+}
+.prev-next {
+    padding-top: .8rem;
+    text-align: center;
+}
