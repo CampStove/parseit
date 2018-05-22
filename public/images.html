@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>parseit</title>
+    <title>images</title>
     <meta name="description" content="coleman jackson's portfolio">
     <meta name="keywords" content="coleman jackson, html, css, javascript, portfolio">
     <meta name="author" content="coleman jackson">
@@ -11,18 +11,17 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-    <section class="surround">
-        <a href="index.html"><h1 class="neon">parseit</h1></a>
-        <article class="group">
-            <p id="temp"></p>
-            <p id="text"></p>
-            <p id="date"></p>
-            <p><a href="resume.html">resume</a></p>
-            <p><a href="images.html">images</a></p>
-            <p><a href="http://bss.blacktec.co/" target="_blank">box spring studios</a></p>
-            <!-- <button>i'm feeling lucky</button>-->
-        </article>
+<section class="surround">
+    <a href="index.html"><h1 class="neon">images</h1></a>
+    <article class="group">
+        <p id="date"></p>
+    </article>
+    <section class="slider">
+        <button id="btn-prev" onclick="sliderFunc('prev')">prev</button>
+        <img id="slider" src="img/ambleside_park_20170528_044612_CJI__71U3569.jpg" />
+        <button id="btn-next" onclick="sliderFunc('next')">next</button>
     </section>
+</section>
 <!-- index javascript -->
 <script src="js/index.js"></script>
 </body>
